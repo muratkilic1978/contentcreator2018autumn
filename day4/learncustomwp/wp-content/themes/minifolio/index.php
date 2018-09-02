@@ -11,12 +11,7 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Minifolio - Bootstrap Responsive Resume, Personal Portfolio Template</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<?php wp_head(); ?>
 </head>
 
 <body>
@@ -201,14 +196,7 @@
   </div>
 </footer>
 <!-- footer --> 
+<?php wp_footer(); ?>
 
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script src="js/retina.min.js"></script> 
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script>
 </body>
 </html>
