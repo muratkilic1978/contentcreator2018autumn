@@ -19,6 +19,74 @@ function load_scripts() {
 }
 # First parameter is hook - this is something WordPress recommend whenever you want add css or js will have to do it 
 add_action('wp_enqueue_scripts','load_scripts');
+
+# Sidebars
+
+add_action('widgets_init','minifolio_sidebars');
+
+function minifolio_sidebars() {
+    register_sidebar(
+        array(
+            'name' => 'Banner',
+            'id' => 'banner',
+            'description' => 'Please, drag your widgets here',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'About Me',
+            'id' => 'about-me',
+            'description' => 'Please, drag your widgets here',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+ 
+    register_sidebar(
+        array(
+            'name' => 'About Me - Second Area',
+            'id' => 'about-me2',
+            'description' => 'Please, drag your widgets here',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+    
+    register_sidebar(
+        array(
+            'name' => 'Hire Me',
+            'id' => 'hire-me',
+            'description' => 'Please, drag your widgets here',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'Contact Me',
+            'id' => 'contact-me',
+            'description' => 'Please, drag your widgets here',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+}
+
+
 ?>
 
 
