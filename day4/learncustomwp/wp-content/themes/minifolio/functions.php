@@ -86,6 +86,13 @@ function minifolio_sidebars() {
     );
 }
 
+# Register the menu by entering register_nav_menus(). Then insert an array where the first parameter inside the array should be the "position" and then a description
+register_nav_menus( 
+    array(
+        'primary' => 'The Main Menu',
+        'social' => 'The Social Menu Icons'
+    )
+);
 
 ?>
 
