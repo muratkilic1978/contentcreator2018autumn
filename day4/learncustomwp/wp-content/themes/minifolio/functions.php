@@ -1,3 +1,6 @@
+
+
+
 <?php
 
 function load_scripts() {
@@ -94,6 +97,9 @@ register_nav_menus(
     )
 );
 
+
+# Enable thumnails inside posts
+add_theme_support( 'post-thumbnails', array( 'post' ) );
 ?>
 
 
